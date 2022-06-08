@@ -1,0 +1,24 @@
+{{define "credits"}}
+{{template "header" .}}
+    <main>
+        <div class="credit_table">
+            <div class="table_bar">
+                <div class="bar_element_h">Дата оформления кредита</div>
+                <div class="bar_element_h">Сумма кредита</div>
+                <div class="bar_element_h">Срок кредита</div>
+                <div class="bar_element_h">Кредитная ставка</div>
+                <div class="bar_element_h">Ежемесячный платеж</div>
+            </div>
+            {{range $i, $el := .Credits}}
+                <div class="table_bar">
+                    <div class="bar_element">{{$el.DateApply}}</div>
+                    <div class="bar_element">{{$el.CreditSum}}</div>
+                    <div class="bar_element">{{$el.CreditDuration}}</div>
+                    <div class="bar_element">{{$el.CreditRate}}</div>
+                    <div class="bar_element">{{$el.CreditPayment}}</div>
+                </div>
+            {{end}}
+        </div>
+    </main>
+{{template "footer" .}}
+{{end}}

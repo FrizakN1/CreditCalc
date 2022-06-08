@@ -1,0 +1,9 @@
+{
+  "Address": "127.0.0.1",
+  "Port": "8080",
+  "DbAddress": "127.0.0.1",
+  "DbPort": "5432",
+  "DbUser": "postgres",
+  "DbPass": "1234",
+  "DbName": "creditCalc"
+}

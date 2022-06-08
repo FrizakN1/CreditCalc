@@ -1,0 +1,12 @@
+{{define "login"}}
+  {{template "header" .}}
+    <main>
+      <div class="login_block">
+        <input type="text" class="login_input" placeholder="E-mail">
+        <input type="password" class="login_input" placeholder="Пароль">
+        <div class="login_btn" id="login_btn">Войти</div>
+        <a href="/registration" class="login_registration">Нет аккаунтта?</a>
+      </div>
+    </main>
+  {{template "footer" .}}
+{{end}}

@@ -1,0 +1,44 @@
+{{define "index"}}
+{{template "header" .}}
+    <main>
+        <div class="calculator">
+            <h1>Кредитый калькулятор</h1>
+            <div class="calc_block">
+                <div class="calc_left_side">
+                    <label>
+                        <span>
+                            Сколько вы хотите
+                            <input type="number" id="meaning" placeholder="25000000 ₽" class="meaning">
+                        </span>
+                        <input type="range" id="scroll" min="30000" max="5000000" class="scroll" value="2500000" step="10000">
+                    </label>
+                    <div class="comment">
+                        <div>от 30 000</div>
+                        <div>до 5 000 000</div>
+                    </div>
+                    <label>
+                        <span>
+                            Срок кредита
+                            <input type="number" id="meaning2" placeholder="32 месяца" class="meaning">
+                        </span>
+                        <input type="range" id="scroll2" min="3" max="60" class="scroll" value="32" step="1">
+                    </label>
+                    <div class="comment">
+                        <div>от 3 месяца</div>
+                        <div>до 60 месяца</div>
+                    </div>
+                </div>
+                <div class="calc_right-side">
+                    <div class="comment up">Ставка</div>
+                    <div class="rate">15,9%</div>
+                    <div class="comment">
+                        <div>Ежемесячный платеж</div>
+                        <div id="sum">96363 ₽</div>
+                    </div>
+                    <div class="apply_btn" id="apply_credit">Оформить</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    {{template "footer" .}}
+{{end}}

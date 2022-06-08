@@ -1,0 +1,24 @@
+{{define "header"}}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{.Title}}</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+    <header>
+        <nav>
+            <ul class="nav_btn">
+                {{if eq .ID 0}}
+                    <a href="/" class="credit_calc"><li >Кредитный калькулятор</li></a>
+                    <a href="/login" class="main_style_btn"><li>Вход</li></a>
+                {{else}}
+                    <a href="/" class="credit_calc"><li>Кредитный калькулятор</li></a>
+                    <a href="/credits" class="credit_calc"><li>Мои кредиты</li></a>
+                    <li class="main_style_btn" id="exit">Выход</li>
+                {{end}}        
+            </ul>
+        </nav>
+    </header>
+{{end}}
