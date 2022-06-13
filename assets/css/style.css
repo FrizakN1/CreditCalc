@@ -267,14 +267,7 @@ span {
     border: 2px solid #343434;
 }
 
-.first_reg_input{
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
 .registration_btn{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     background-color: #ad7e00;
     text-align: center;
     padding: 20px;
